@@ -1,0 +1,112 @@
+<!--Informa que o documento é do tipo HTML5-->
+<!DOCTYPE html>
+<!--Abre a tag do documento e informa qual o idioma é usado-->
+<html lang="pt-br">
+    <!--Tag na qual são inseridos os metadados-->
+    <head>
+        <!--Informa qual é o título da página-->
+        <title>Minha página</title>
+        <!--informa qual o decode que será usado-->
+        <meta charset="utf-8">
+        <!--Importa o css da pasta do bootstrap-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <!--importa o css da pasta style.css-->
+        <link rel="stylesheet" type="text/css" href="css1/style.css">
+    </head>
+    <!--Cria o corpo da página-->
+    <body>
+        <!--Cria a navbar (barra de navegação) grande e clara e com margem-->
+        <nav class="navbar navbar-expand-lg navbar-light margin">
+            <!--Cria um link para a navbar-->
+            <a class="navbar-brand" href="#">
+                <!--insere uma imagem com descrição, largura e altura-->
+                <img src="img/download.png" width="50" height="50">
+            </a>
+            <!--cria divisão e aplica estilo que está contido na classe dentro da divisão-->
+            <div class="collapse navbar-collapse">
+            <!--cria lista não-ordenada e também deve ter uma classe por estar dentro de uma classe-->
+                <ul class="navbar-nav">   
+                    <!--cria os itens e classe na qual o item está ativo-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#quem-somos">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#parceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#servicos">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--cria link para o nav link Quem Somos-->
+        <section id="quemsomos">
+            <!--cria texto com margem para a esquerda se for só container, se for usado container fluid usa a página inteira-->
+            <!--centraliza texto com text-center-->
+            <!--coloca margem no texto-->
+            <div class="container-fluid quem-somos text-center margin">
+                <!--Cria título-->
+                <h3>Quem Somos</h3>
+                <!--insere imagem com forma circular, largura e altura-->
+                <img src="img/site3.jpg" class="rounded-circle" width="400" height="400">
+                <h3>Somos um time comprometido com resultados!</h3>
+            </div>
+        </section>
+
+        <section id="parceiros">
+            <!--cria texto com margem para a esquerda se for só container, se for usado container fluid usa a página inteira-->
+            <!--centraliza texto com text-center-->
+            <!--coloca margem no texto-->
+            <div class="container-fluid parceiros text-center margin">
+                <!--Cria título-->
+                <h3 class="margin">Parceiros</h3>
+                <div class="container">
+                    <!--cria colunas-->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="img/download (1).png" width="100%">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="img/download (1).png" width="100%">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="img/download (1).png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <!--cria texto com margem para a esquerda se for só container, se for usado container fluid usa a página inteira-->
+            <!--centraliza texto com text-center-->
+            <!--coloca margem no texto-->
+            <div class="container-fluid servicos text-center margin">
+                <!--Cria título-->
+                <h3 class="margin">Serviços</h3>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Site</p>
+                        <img src="img/site1.jpg" width="80%">
+                    </div>
+                    <div class="col-lg-4">
+                        <p>APP</p>
+                        <img src="img/site2.jpg" width="75%" height="75%">
+                    </div>
+                    <div class="col-lg-4">
+                        <p>APP</p>
+                        <img src="img/site3.jpg" width="75%" height="75%">
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid text-center bg-footer margin">
+            <p>
+                Desenvolvido por Larissa Coutinho
+            </p>
+        </footer>
+
+    </body>
+</html>
